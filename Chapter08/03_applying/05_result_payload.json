@@ -1,0 +1,10 @@
+{
+  "success":true,
+  "historical":true,
+  "date":"2010-11-09",
+  "timestamp":1289347199,
+  "source":"USD",
+  "quotes":{
+    "USDAUD":0.989981
+  }
+}
