@@ -37,7 +37,7 @@ type LoadAll struct {
 	rowConverter
 }
 
-func (loader *LoadPerson) All() ([]Person, error) {
+func (loader *LoadAll) All() ([]Person, error) {
 	rows := loader.loadAllFromDB()
 	defer rows.Close()
 
@@ -55,7 +55,7 @@ func (loader *LoadPerson) All() ([]Person, error) {
 	return output, nil
 }
 
-func (loader *LoadPerson) loadAllFromDB() *sql.Rows {
+func (loader *LoadAll) loadAllFromDB() *sql.Rows {
 	// TODO: implement
 	return nil
 }
